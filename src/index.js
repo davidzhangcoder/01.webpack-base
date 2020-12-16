@@ -10,7 +10,10 @@ import store from '@/components/comment/redux/store';
 
 // import './test.js'
 // import './test1.js'
-import Mycomp from './test1'
+// import Mycomp from './test1'
+import displayfun from './TestImport'
+
+displayfun();
 
 //2.创建虚拟DOM元素
 // 参数1：创建元素的类型，字符串，表示元素名称
@@ -25,8 +28,8 @@ ReactDOM.render(
     <div style={{height:'100%'}}>
         {/* <CmtList></CmtList> */}
         {/* <Counter initialValue={"AAAAA"} ></Counter> */}
-        <MovieMain></MovieMain>
-        <Mycomp></Mycomp>
+        {/* <MovieMain></MovieMain>
+        <Mycomp></Mycomp> */}
     </div>,document.getElementById('app'))
 
 // ReactDOM.render(
