@@ -24,7 +24,8 @@ export default class MovieList extends React.Component {
         }
         else {
             const ui =
-                <div>
+                <div style={{display: 'flex',
+                flexWrap: 'wrap'}}>
                     {
                         this.state.data.map(item =>
                             // <div key={item._id} style={{ border: "1px solid", padding: "10px 10px" }}>

@@ -1,0 +1,9 @@
+.movie_list_item { 
+    // 类名中不能有 － （横杠），可以有 _ （下划线）
+    border: 1px solid;
+    padding: 10px 10px;
+    width: 170px;
+    text-align: center;
+    margin: 5px;
+    box-shadow: 0px 0px 6px red;
+}

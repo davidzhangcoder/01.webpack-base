@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
 
+import styles from '@/css/movieitem.scss'
+
+console.log("styles",styles)
+
 class MovieListItem extends Component {
     constructor(props) {
         super(props);
@@ -7,10 +11,11 @@ class MovieListItem extends Component {
 
     render() {
         const ui =
-            <div style={{ border: "1px solid", padding: "10px 10px" }} onClick={this.showMovieItemDetail}>
-                <img src={this.props.item.images[0]} style={{ width: "100px", height: "200px" }} />
-                {this.props.item.title}
-            </div>;
+            <div className={styles['movie_list_item']}
+                onClick={this.showMovieItemDetail}>
+                <img src={this.props.item.images[0]} style={{ width: "140px", height: "200px" }} />
+                <h4>{this.props.item.title}</h4>
+            </div>
         return ui;
     }
 

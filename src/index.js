@@ -28,8 +28,8 @@ ReactDOM.render(
     <div style={{height:'100%'}}>
         {/* <CmtList></CmtList> */}
         {/* <Counter initialValue={"AAAAA"} ></Counter> */}
-        {/* <MovieMain></MovieMain>
-        <Mycomp></Mycomp> */}
+        <MovieMain></MovieMain>
+        {/* <Mycomp></Mycomp> */}
     </div>,document.getElementById('app'))
 
 // ReactDOM.render(
