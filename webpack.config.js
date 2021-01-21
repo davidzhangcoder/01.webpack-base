@@ -9,7 +9,7 @@ const htmlWebPackPlugin = new HtmlWebPackPlugin({
 //向外暴露一个打包的配置对象
 //Webpack默认只能打包处理 .js 后缀名类型的文件，像 .png .vue 无法主动处理，所以要配置第三方的loader (即第三方模块)
 module.exports = {
-    mode: 'production', // development production
+    mode: 'development', // development production
     //devtool: false
 
     plugins: [

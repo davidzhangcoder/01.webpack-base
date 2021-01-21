@@ -7,6 +7,7 @@ import CmtListContainer from '@/components/comment/containers/CmtListContainer'
 import Counter from '@/components/Counter'
 import MovieMain from '@/components/movie/MovieMain'
 import store from '@/components/comment/redux/store';
+import PandemicMain from '@/components/pandemic/pandemic-main'
 
 // import './test.js'
 // import './test1.js'
@@ -28,8 +29,9 @@ ReactDOM.render(
     <div style={{height:'100%'}}>
         {/* <CmtList></CmtList> */}
         {/* <Counter initialValue={"AAAAA"} ></Counter> */}
-        <MovieMain></MovieMain>
+        {/* <MovieMain></MovieMain> */}
         {/* <Mycomp></Mycomp> */}
+        <PandemicMain></PandemicMain>
     </div>,document.getElementById('app'))
 
 // ReactDOM.render(
