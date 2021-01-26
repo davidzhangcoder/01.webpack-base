@@ -9,6 +9,14 @@ const htmlWebPackPlugin = new HtmlWebPackPlugin({
 //向外暴露一个打包的配置对象
 //Webpack默认只能打包处理 .js 后缀名类型的文件，像 .png .vue 无法主动处理，所以要配置第三方的loader (即第三方模块)
 module.exports = {
+
+    entry: path.join( __dirname, './src/index.js'),
+
+    output: {
+        filename: "bundle.js",
+        path: path.join(__dirname,"./dist")
+    },
+
     mode: 'development', // development production
     //devtool: false
 
@@ -50,8 +58,19 @@ module.exports = {
                         }
                     }
                 },
-                'sass-loader']} //打包处理scss文件的loader
-        ]
+                'sass-loader']}, //打包处理scss文件的loader
+
+                {
+                    test: /\.(png|jpg|bmp|gif)$/, 
+                    use: [{
+                        loader: "url-loader",
+                        options: {
+                            limit: 1000, // 大于 1000 bytes 的文件都走 fallback
+                            name: "images/[hash:8]-[name].[ext]"
+                        }
+                    }],
+                }
+            ]
     },
 
     resolve: {

@@ -1,0 +1,7 @@
+.test-csspost-1{
+    display: block;
+    height: 200px;
+    width: 200px;
+    background-color: linear-gradient('to left', #FA5A55, #FA994D);
+    display: flex;
+}

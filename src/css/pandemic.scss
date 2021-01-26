@@ -160,3 +160,19 @@ body::-webkit-scrollbar{
     left: -76px;
     transform: translateY(11px);
 }
+
+.test-image{
+    display: block;
+    height: 200px;
+    width: 200px;
+    background: url(../images/pic1.jpg);
+}
+
+.test-csspost{
+    display: block;
+    height: 200px;
+    width: 200px;
+    background-color: linear-gradient('to left', #FA5A55, #FA994D);
+    display: flex;
+    backface-visibility: hidden;
+}

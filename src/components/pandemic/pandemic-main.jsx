@@ -4,6 +4,9 @@ import { HashRouter, Route, Link, Redirect } from 'react-router-dom'
 import EndDate from './EndDate'
 
 import styles from '@/css/pandemic.scss'
+import '@/css/pandemic-test.css'
+// import pic1 from '@/images/pic1.jpg'
+import pic1 from '../../images/pic1.jpg'
 
 console.log(styles)
 
@@ -20,7 +23,12 @@ const menu = [
 
 const Forever = function () {
     return (
-        <div>Forever</div>
+        <div>
+            Forever
+            <img src={pic1} alt=""/>
+            <span className={styles['test-image']}></span>
+            <span className={styles['test-csspost']}></span>
+        </div>
     )
 }
 const Combine = function () {
